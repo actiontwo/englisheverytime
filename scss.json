@@ -1,0 +1,9 @@
+{
+  "useIndex" : true,
+  "indexFilePath" : "client/css/style.scss",
+  "enableAutoprefixer": true,
+  "autoprefixerOptions": {
+    "browsers": ["> 1%"],
+    "cascade": false
+  }
+}
