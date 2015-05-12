@@ -1,0 +1,1 @@
+#IrregularVerb = new Mongo.Collection('irregularVerb');

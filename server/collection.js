@@ -1,0 +1,1 @@
+IrregularVerb = new Meteor.Collection('irregularVerb');

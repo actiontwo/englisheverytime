@@ -1,0 +1,41 @@
+template(name='irregular_verb')
+  h1 Common Irregular Verb List
+  form.new-irregular-verb
+    input(type="text" name="text" placeholder="Type to add new tasks")
+
+  table.table.table-striped.table-hover
+    thead
+      tr
+        th Base Form
+        th Past Simple
+        th Past Participle
+        th 3rd Person Singular
+        th Present Participle
+    tbody
+      each geti
+        tr
+          +irregular_verb_row
+
+template(name='irregular_verb_row')
+    td
+      each base
+        span #{this}
+        br
+    td
+      each pastSimple
+        span #{this}
+        br
+    td
+      each pastParticiple
+        span #{this}
+        br
+    td
+      each personSingular3rd
+        span #{this}
+        br
+    td
+      each presentParticiple
+        span #{this}
+        br
+
+
