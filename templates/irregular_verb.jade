@@ -1,7 +1,5 @@
 template(name='irregular_verb')
   h1 Common Irregular Verb List
-  form.new-irregular-verb
-    input(type="text" name="text" placeholder="Type to add new tasks")
 
   table.table.table-striped.table-hover
     thead
@@ -12,7 +10,7 @@ template(name='irregular_verb')
         th 3rd Person Singular
         th Present Participle
     tbody
-      each geti
+      each getIrrVerb
         tr
           +irregular_verb_row
 
