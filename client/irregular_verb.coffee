@@ -2,13 +2,13 @@
 
 Meteor.subscribe("irregularVerb")
 
-Template.irregular_verb.onRendered ()->
+Template.irregularVerbs.onRendered ()->
   Meteor.call('findIrregularVerb', (error, result) ->
     Session.set('irregularVerbSesion', result)
     return
   )
 
-Template.irregular_verb.events
+Template.irregularVerbs.events
   "submit .new-irregular-verb" : (event)->
     IrregularVerb.insert
       base : ['abide']
@@ -19,6 +19,6 @@ Template.irregular_verb.events
       createdAt : new Date()
     return false
 
-Template.irregular_verb.helpers
+Template.irregularVerbs.helpers
   getIrrVerb : ()->
     return Session.get('irregularVerbSesion')

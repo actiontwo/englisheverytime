@@ -1,5 +1,5 @@
-template(name='irregular_verb')
-  h1 Common Irregular Verb List
+template(name='irregularVerbs')
+  h1 Common Irregular Verb List {{abc}}
 
   table.table.table-striped.table-hover
     thead
@@ -10,7 +10,7 @@ template(name='irregular_verb')
         th 3rd Person Singular
         th Present Participle
     tbody
-      each getIrrVerb
+      each data
         tr
           +irregular_verb_row
 
