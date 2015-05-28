@@ -1,3 +1,3 @@
-# englisheverytime
+# Englisheverytime
 
-This appication will help people practice with some small tests to improve English skills.
+Englisheverytime is an appication, It'll help people practice on some small tests to improve English skills.
