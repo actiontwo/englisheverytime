@@ -1,6 +1,6 @@
 Meteor.startup ->
 #  IrregularVerb.remove({})
-  if IrregularVerb.find({}).fetch().length is 0
+  if IrregularVerb.find({}).count() is 0
     irregularVerb = [
       base : ['abide']
       pastSimple : ['abode', 'abided']

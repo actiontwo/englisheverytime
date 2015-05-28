@@ -1,2 +1,12 @@
 template(name='header')
-  p I am header
+  div.container
+    div.row
+      div.col-md-3
+        div#main-logo.text-center
+          a(href='')
+            img(src='http://placehold.it/100x50')
+      div.col-md-9
+        ul.list-inline.list-unstyled
+          li: a(href="{{ pathFor 'home' }}") Home
+          li: a Practice
+          li: a(href="{{ pathFor 'irregular' }}") Irregular Verb

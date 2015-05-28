@@ -1,2 +1,22 @@
 template(name="footer")
-  p I am footer
+  div.container
+    div.col-md-7
+      div#logo-footer
+        a(href="{{ pathFor 'home'}}")
+          img(src='http://placehold.it/200x100')
+      div#copyright
+        sm © 2015 - 2015 English Everytime, Ltd
+    div.col-md-5
+      div.row
+        div.col-md-6
+          h2 Information
+          ul
+            li: a About Us
+            li: a Terms of Service
+            li: a Privacy Policy
+        div.col-md-6
+          h2 Follow us
+          ul
+            li: a About Us
+            li: a Terms of Service
+            li: a Privacy Policy
