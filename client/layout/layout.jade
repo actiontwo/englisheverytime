@@ -1,8 +1,9 @@
 template(name='layout')
-    header
-      +yield region="header"
-    section.main-content
-      section.container
-       +yield
-    footer
-      +yield region="footer"
+  div#pre-header
+  header
+    +yield region="header"
+  section.main-content
+    section.container
+      +yield
+  footer
+    +yield region="footer"

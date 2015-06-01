@@ -1,0 +1,10 @@
+template(name='grammar')
+  h1 Learning
+  div.row
+    div.col-md-4
+      ul
+        each listGrammars
+          li: a( class="{{checkActive slug}}" href="{{ pathFor 'grammar' lesson=slug }}") {{lesson}}
+    div.col-md-8
+      h1 {{contentLesson.lesson}}
+      | {{{contentLesson.content}}}

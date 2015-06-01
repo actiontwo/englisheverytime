@@ -11,3 +11,5 @@ mquandalle:jade
 twbs:bootstrap
 insecure
 iron:router
+blaze
+underscore

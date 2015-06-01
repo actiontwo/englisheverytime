@@ -6,7 +6,9 @@ template(name='header')
           a(href='')
             img(src='http://placehold.it/100x50')
       div.col-md-9
-        ul.list-inline.list-unstyled
-          li: a(href="{{ pathFor 'home' }}") Home
-          li: a Practice
-          li: a(href="{{ pathFor 'irregular' }}") Irregular Verb
+        nav#main-menu
+          ul.list-inline.list-unstyled
+            li: a(href="{{ pathFor 'home' }}") Home
+            li: a Practice
+            li: a(href="{{ pathFor 'irregular' }}") Irregular Verb
+            li: a(href="{{ pathFor 'grammar'}}") Grammar
